@@ -1,0 +1,174 @@
+html {
+  min-height: 100%;
+  background-color: #F4D9B5;
+}
+
+body {
+  background-color: #F4D9B5;
+  margin: 0;
+  padding: 24px;
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  /* Film grain texture */
+  background-image: radial-gradient(
+    #8C4A4A 0.5px,
+    transparent 0.5px
+  );
+  background-size: 5px 5px;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-style: italic;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 2px;
+
+  /* Original cream shadow */
+  text-shadow: 2px 2px 0 #f4d9b5;
+
+  color: #a51f2b;
+  background-color: #DFA0A0;
+  padding: 24px 16px;
+  margin: 30px 0;
+}
+
+.divider {
+  width: 70px;
+  height: 1px;
+  background-color: #8C4A4A;
+  margin: 25px auto;
+}
+
+p {
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #F4D9B5;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  background-color: #a51f2b;
+  margin-top: 45px;
+}
+
+.movie-section {
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.movie-intro {
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+  font-weight: bold;
+  color: #DFA0A0;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+.poster {
+  width: 220px;
+  margin: 0 auto;
+  border: 1px solid #8C4A4A;
+  box-sizing: border-box;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.message {
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 16px;
+  color: #6B3A3A;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  max-width: 280px;
+  margin: 20px auto 50px;
+}
+/* POSTER FLIP */
+.poster {
+  perspective: 1000px;
+}
+
+.poster-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.poster-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.poster-front,
+.poster-back {
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.poster-front img,
+.poster-back img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.poster-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+.message-1 { color: #79BAEC; }
+.message-2 { color: #FF4d00; }
+.message-3 { color: #df73ff; }
+.message-4 { color: #ff69b4; }
+.message-5 { color: #98FB98; }
+.tap-hint {
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  font-weight: bold;
+  color: #8C4A4A;
+  background: transparent;
+  letter-spacing: 2px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.the-end {
+  text-align: center;
+  margin: 100px 0 50px;
+  padding: 30px 10px;
+}
+
+.the-end h2 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 42px;
+  font-style: italic;
+  letter-spacing: 5px;
+  color: #a51f2b;
+  margin: 30px 0;
+}
+
+.the-end p {
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #8C4A4A;
+  background: transparent;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+.end-divider {
+  width: 70px;
+  height: 1px;
+  background-color: #8C4A4A;
+  margin: 0 auto;
+}
